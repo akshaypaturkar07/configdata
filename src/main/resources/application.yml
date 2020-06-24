@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: password
+      scope: read,write
+      auto-approve-scopes: '.*'
+db:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  local:
+    database_url: jdbc:mysql://localhost:1521/practice
+    database_username: root
+    database_password: V@ndana160791
+  production:
+    database_url: jdbc:mysql://docker-mysql:3306/practice?autoReconnect=true&useSSL=false
+    database_username: user
+    database_password: password
